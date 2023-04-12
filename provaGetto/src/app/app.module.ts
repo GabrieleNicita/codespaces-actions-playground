@@ -3,14 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './view/sharedView/home/home.component';
-import { AltroComponent } from './view/sharedView/altro/altro.component';
+import { LayoutComponent } from './view/sharedView/layout/layout.component';
+import { HomeComponent } from './view/sharedView/layout/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    AltroComponent
+    LayoutComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
