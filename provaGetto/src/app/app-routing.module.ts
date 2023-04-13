@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './view/sharedView/layout/layout.component';
-import { LayoutRoutingModule } from './view/sharedView/layout/layout-routing.routing';
+
 
 const routes: Routes = [
   {
@@ -20,7 +20,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes), LayoutRoutingModule],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
