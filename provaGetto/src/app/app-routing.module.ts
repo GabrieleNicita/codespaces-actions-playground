@@ -6,9 +6,12 @@ const routes: Routes = [
 
   { path: 'admin', loadChildren: () => import('./view/admin/admin.module').then(m => m.AdminModule) },
 
-  { path: 'home', loadChildren: () => import('./view/layout/layout.module').then(m => m.LayoutModule) },
+  { path: 'red', loadChildren: () => import('./view/layout/layout.module').then(m => m.LayoutModule) },
 
+  { path: '', redirectTo: 'red', pathMatch: 'full' },
 
+  { path: '**', redirectTo: 'red' }
+  
 ];
 
 @NgModule({

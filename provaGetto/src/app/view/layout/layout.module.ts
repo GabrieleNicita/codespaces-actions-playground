@@ -1,6 +1,6 @@
-import { NgModule } from '@angular/core';
+import { NgModule, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LayoutRoutingModule } from './layout-routing.routing';
+import { LayoutRoutingModule } from './layout-routing.routes';
 import { LayoutComponent } from './layout.component';
 
 
@@ -13,4 +13,6 @@ import { LayoutComponent } from './layout.component';
     LayoutRoutingModule
   ]
 })
-export class LayoutModule { }
+export class LayoutModule{
+  
+}
